@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    position: relative;
+    grid-gap: 10px;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "left right"
+    "footer footer"
+    "third third";
+    grid-template-columns: 200px 500px 200px;
+    grid-template-rows: 150px 200px 600px 200px 500px;
+}
+h1, h2 {
+    font-family: monospace;
+    text-align: center;
+}
+header {
+    background-color: dodgerblue;
+    grid-area: header; 
+}
+.search {
+    border: 1px solid blue;
+    display: grid;
+    margin: 10px auto;
+    
+}
+nav {
+    background-color: beige;
+    grid-area: nav;
+}
+.left {
+    background-color: dodgerblue;
+    grid-area: left;
+}
+.right {
+    background-color: beige;
+    grid-area: right;
+}
+footer {
+    background-color: dodgerblue;
+    grid-area: footer;
+}
+.third {
+    background-color: beige;
+    grid-area: third;
+}
